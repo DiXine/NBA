@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace NBA
 {
-    public partial class Form4 : Form
+    public partial class Matchup_Detail : Form
     {
-        public Form4()
+        public Matchup_Detail()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            Form form2 = new Form2();
-            form2.ShowDialog();
+
         }
     }
 }

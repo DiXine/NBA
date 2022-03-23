@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace NBA
 {
-    public partial class Form6 : Form
+    public partial class Manage_Matchups : Form
     {
-        public Form6()
+        public Manage_Matchups()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Form form2 = new Form2();
-            form2.ShowDialog();
+            this.Hide();
+            Form Admin1 = new Admin1();
+            Admin1.Show();
         }
     }
 }

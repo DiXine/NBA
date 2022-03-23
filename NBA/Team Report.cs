@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace NBA
 {
-    public partial class Form3 : Form
+    public partial class Team_Report : Form
     {
-        public Form3()
+        public Team_Report()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Form form2 = new Form2();
-            form2.ShowDialog();
+            this.Hide();
+            Form ManagePlayers = new Manage_Players();
+            ManagePlayers.Show();
         }
     }
 }
