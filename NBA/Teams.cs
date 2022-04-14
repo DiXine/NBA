@@ -15,6 +15,7 @@ namespace NBA
         public Teams()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +49,11 @@ namespace NBA
         {
             tabPage1.Visible = true ;
             tabPage2.Visible = false ;
+        }
+
+        private void Teams_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
