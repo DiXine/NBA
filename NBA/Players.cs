@@ -23,5 +23,15 @@ namespace NBA
             Form form2 = new Form2();
             form2.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Players_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

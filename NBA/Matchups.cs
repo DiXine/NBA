@@ -23,5 +23,15 @@ namespace NBA
             Form form2 = new Form2();
             form2.ShowDialog();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

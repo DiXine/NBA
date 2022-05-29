@@ -6,24 +6,33 @@ using System.Threading.Tasks;
 
 namespace NBA
 {
-    internal class Team
+    public partial class Team
     {
-        String teamID;
-        String teamName;
-        String teamAbbr;
-        String teamLogo;
+        public int teamID;
+        public string TeamName;
+        public string DivisionID;
+        string Abbr;
+        string Logo;
+        string Coach;
+        string Stadium;
 
         public void set(
-            string teamID, 
-            string teamName,
-            string teamAbbr,
-            string teamLogo)
+            int teamID, 
+            string TeamName,
+            string DivisionID,
+            string Coach,
+            string Abbr,
+            string Stadium,
+            string Logo)
             
         {
             this.teamID = teamID;
-            this.teamName = teamName;
-            this.teamAbbr = teamAbbr;
-            this.teamLogo = teamLogo;
+            this.TeamName = TeamName;
+            this.Stadium = Stadium;
+            this.Abbr = Abbr;
+            this.Logo = Logo;
+            this.DivisionID = DivisionID;
+            this.Coach = Coach;
         }
     }
 }

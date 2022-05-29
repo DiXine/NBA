@@ -8,9 +8,9 @@ namespace NBA
 {
     internal class Country
     {
-        string countryCode;
-        string countryName;
-        public void set(string countryName, string countryCode)
+        String countryCode;
+        String countryName;
+        public void set(String countryName, String countryCode)
             { 
             this.countryName = countryName; 
             this.countryCode = countryCode; 

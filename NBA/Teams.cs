@@ -15,7 +15,11 @@ namespace NBA
         public Teams()
         {
             InitializeComponent();
-            
+            this.Controls.Find("label3", true)[0].Text = Form1.teams[0].TeamName;
+            this.Controls.Find("label4", true)[0].Text = Form1.teams[1].TeamName;
+            this.Controls.Find("label5", true)[0].Text = Form1.teams[2].TeamName;
+            this.Controls.Find("label6", true)[0].Text = Form1.teams[3].TeamName;
+            this.Controls.Find("label7", true)[0].Text = Form1.teams[4].TeamName;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +58,14 @@ namespace NBA
         private void Teams_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Team_Detail teamdetail = new Team_Detail();
+            teamdetail.teamID = 1;
+            teamdetail.Show();
         }
     }
 }

@@ -12,6 +12,9 @@ namespace NBA
 {
     public partial class Team_Detail : Form
     {
+        Team teams = new Team();
+
+        public int teamID = 0;
         public Team_Detail()
         {
             InitializeComponent();
@@ -31,6 +34,27 @@ namespace NBA
 
         private void Team_Detail_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < Form1.teams.Length; i++)
+                if (this.teamID == Form1.teams[i].teamID)
+                    this.teams = Form1.teams[i];
+            label3.Text = this.teams.TeamName;
+
+
+            for (int i = 0; i < Form1.players.Length; i++)
+                if (Form1.players[i].teamID == this.teamID)
+                {
+                    dataGridView1.Rows.Add
+                        (Form1.players[i].playerID, 
+                        Form1.players[i].number, 
+                        Form1.players[i].name, 
+                        Form1.players[i].growth, 
+                        Form1.players[i].position,
+                        Form1.players[i].college, 
+                        Form1.players[i].country, 
+                        Form1.players[i].price, 
+                        Form1.players[i].TeamName, 
+                        Form1.players[i].teamID);
+                }
             comboBox1.Items.Add("2016 - 2022");
         }
     }

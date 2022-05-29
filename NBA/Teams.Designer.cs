@@ -1130,6 +1130,7 @@
             this.label3.Size = new System.Drawing.Size(68, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "Team name";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 

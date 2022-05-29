@@ -170,6 +170,7 @@
             this.label3.Text = "                      Welcome to use this system , you can click the buttons belo" +
     "w to navigate to the \r\n                                                         " +
     "                 corresponding page.";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Admin1
             // 
