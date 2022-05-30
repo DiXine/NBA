@@ -32,15 +32,16 @@ namespace NBA
         private void button1_Click(object sender, EventArgs e)
         {
             Player player = new Player();
-            player.number = Convert.ToInt16(textBox1.Text);
+            player.number = Convert.ToInt32(textBox1.Text);
             player.name = textBox2.Text;
             player.growth = Convert.ToInt32(textBox3.Text);
-            player.position = Convert.ToInt16(textBox4.Text);
+            player.position = Convert.ToInt32(textBox4.Text);
             player.college = textBox5.Text;
             player.country = textBox6.Text;
-            player.price = Convert.ToInt16(textBox7.Text);
-
+            player.price = Convert.ToInt32(textBox7.Text);
             player.TeamName = comboBox1.Text;
+
+
             for (int i = 0; i < Form1.teams.Length; i++)
                 if (comboBox1.Text == Form1.teams[i].TeamName)
                     player.teamID = Form1.teams[i].teamID;

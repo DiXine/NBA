@@ -55,7 +55,7 @@ namespace NBA
                         Form1.players[i].TeamName, 
                         Form1.players[i].teamID);
                 }
-            comboBox1.Items.Add("2016 - 2022");
+            
         }
     }
 }

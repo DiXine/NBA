@@ -25,8 +25,8 @@ namespace NBA
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form addplayer = new addplayer();
-            addplayer.Show();
+            Form AdminMenu = new AdminMenu();
+            AdminMenu.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -16,5 +16,17 @@ namespace NBA
         {
             InitializeComponent();
         }
+
+        private void Technical_Administrator_menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form AdminMenu = new AdminMenu();
+            AdminMenu.Show();
+        }
     }
 }

@@ -15,7 +15,9 @@ namespace NBA
         public Teams()
         {
             InitializeComponent();
-            this.Controls.Find("label3", true)[0].Text = Form1.teams[0].TeamName;
+            label3.Text = Form1.teams[0].TeamName;
+            for (int i = 0; i < 5; i++)
+                this.Controls.Find("label3", true)[0].Text = Form1.teams[0].TeamName;
             this.Controls.Find("label4", true)[0].Text = Form1.teams[1].TeamName;
             this.Controls.Find("label5", true)[0].Text = Form1.teams[2].TeamName;
             this.Controls.Find("label6", true)[0].Text = Form1.teams[3].TeamName;

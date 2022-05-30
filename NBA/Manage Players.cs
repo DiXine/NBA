@@ -35,5 +35,12 @@ namespace NBA
             Form TeamReport = new Team_Report();
             TeamReport.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form addplayer = new addplayer();
+            addplayer.Show();
+        }
     }
 }
